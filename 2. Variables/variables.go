@@ -27,8 +27,12 @@ func main() {
     fmt.Println(status)
     fmt.Println("Type of variable: ", reflect.TypeOf(status)) // bool
 
+    // Instead of using a package, we can use a templete string
+    fmt.Printf("status is: %T\n", status)
+
+
     // The diference between var and :=, it with := we can only use inside a function.
-    // and with var, the varialbe declaration and value assignment cannot be done separetly (must be done in the same line)
+    // and with var, the variable declaration and value assignment cannot be done separetly (must be done in the same line)
 
 
     // Other data types like float
@@ -51,5 +55,18 @@ func main() {
     fmt.Println(a)
     fmt.Println(b)
     fmt.Println(c)
+
+
+        var (
+        name string
+        age int = 15
+        last_name = "Simpson"
+    )
+
+    name = "Homero"
+
+    fmt.Println(name)
+    fmt.Println(age)
+    fmt.Println(last_name)
 
 }

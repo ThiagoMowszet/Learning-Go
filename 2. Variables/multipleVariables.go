@@ -24,5 +24,16 @@ func multiple_variables() {
     fmt.Println(h) // World!
 
 
+// Or we can declare our variable in a block
+
+    var (
+        name string
+        age int = 15
+        last_name = "Simpson"
+    )
+
+    fmt.Println(name)
+    fmt.Println(age)
+    fmt.Println(last_name)
 
 }
