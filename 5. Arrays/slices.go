@@ -67,15 +67,48 @@ func slices_arrays(){
 
 
     myslice5 := make([]int, 5, 10)
-    fmt.Printf("myslice1 = %v\n", myslice5)
-    fmt.Printf("length = %d\n", len(myslice5))
-    fmt.Printf("capacity = %d\n", cap(myslice5))
+    fmt.Printf("myslice5 = %v\n", myslice5) // [0 0 0 0 0]
+    fmt.Printf("length = %d\n", len(myslice5))// 5
+    fmt.Printf("capacity = %d\n", cap(myslice5)) // 10
 
 
     // with omitted capacity
     myslice8 := make([]int, 5)
-    fmt.Printf("myslice4 = %v\n", myslice8)
-    fmt.Printf("length = %d\n", len(myslice8))
-    fmt.Printf("capacity = %d\n", cap(myslice8))
+    fmt.Printf("myslice4 = %v\n", myslice8) // [0 0 0 0 0]
+    fmt.Printf("length = %d\n", len(myslice8)) // 5
+    fmt.Printf("capacity = %d\n", cap(myslice8)) // 5 - if the capacity parameter is not defined, it will be equal to the length.
+
+
+
+
+// Access elements of a slice
+
+
+    prices := []int{10, 20, 30} 
+    fmt.Println(prices[0]) // 10
+    fmt.Println(prices[2]) // 30
+    
+
+
+// Change elements of a slices 
+
+    prices2 := []int{10, 50, 10}
+    prices2[2] = 5
+    fmt.Println(prices2[2]) // 5
+
+
+
+// Append elements to a slice
+// Syntax : slice_name = append(slice_name, element1, element2, ...)
+
+    myslice_append := []int{1, 2, 3, 4, 5, 6}
+    fmt.Printf("myslice1 = %v\n", myslice_append) // 
+    fmt.Printf("length = %d\n", len(myslice_append))
+    fmt.Printf("capacity = %d\n", cap(myslice_append))
+
+    myslice_append = append(myslice1, 20, 21)
+    fmt.Printf("myslice1 = %v\n", myslice_append)
+    fmt.Printf("length = %d\n", len(myslice_append))
+    fmt.Printf("capacity = %d\n", cap(myslice_append))
 
 }
