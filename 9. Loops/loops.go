@@ -65,6 +65,7 @@ func loops_go(){
     }
 
 
+    // we want to omit the values (idx stores the index, val stores the value)
 
     fruits4 := [3]string{"apple", "orange", "banana"}
 
