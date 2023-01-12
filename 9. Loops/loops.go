@@ -23,18 +23,18 @@ func loops_go(){
 
 
 
-// Break statement
+    // Break statement
 
-   for i := 0; i <= 5; i++{
-       if i == 3{
-           break
+    for i := 0; i <= 5; i++{
+        if i == 3{
+            break
         }
-       fmt.Printf("%v valor es : %v \n", i, i)
+        fmt.Printf("%v valor es : %v \n", i, i)
     }
 
 
 
-// Nested loops
+    // Nested loops
 
     adj := [2]string{"big", "tasty"}
     fruits := [3]string{"apple", "orange", "banana"}
@@ -45,8 +45,35 @@ func loops_go(){
     }
 
 
+    // Range
+    // is used to more easily iterate over an array, slice or map. It returns both the index and the value.
+
+    fruits2 := [3]string{"apple", "orange", "banana"}
+    for idx, val := range fruits2 {
+        fmt.Printf("%v\t%v\n", idx, val)
+    }
+
+
+
+
+    // To only show the value or the index, you can omit the other output using an underscore (_).
+
+
+    fruits3 := [3]string{"apple", "orange", "banana"}
+    for _, val := range fruits3 {
+        fmt.Printf("%v\n", val)
+    }
+
+
+
+    fruits4 := [3]string{"apple", "orange", "banana"}
+
+    for idx, _ := range fruits4 {
+        fmt.Printf("%v\n", idx)
+    }
 
 }
+
 
 
 
