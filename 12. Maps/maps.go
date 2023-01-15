@@ -182,7 +182,7 @@ func iterating_over_Maps(){
 func iterate_over_maps_specific_order(){
     a := map[string]int{"one": 1, "two": 2, "three": 3, "four": 4}
 
-    var b = []string             // defining the order
+    var b []string             // defining the order
     b = append(b, "one", "two", "three", "four")
 
     for k, v := range a {        // loop with no order
