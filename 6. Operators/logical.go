@@ -1,14 +1,14 @@
 package main 
 
 func logical(){
-    
-/*
 
-&& AND
-|| OR 
-! NOT
+    /*
 
-*/
+    && AND
+    || OR 
+    ! NOT
+
+    */
 
 }
 

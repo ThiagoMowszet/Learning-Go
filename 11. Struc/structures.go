@@ -53,10 +53,10 @@ func main(){
     fmt.Println("Salary: ", pers2.salary)
 
 
-//  Print Pers1 info by calling a function
+    //  Print Pers1 info by calling a function
     printPerson(pers1)
 
-//  Print Pers2 info by calling a function
+    //  Print Pers2 info by calling a function
     printPerson(pers2)
 
 

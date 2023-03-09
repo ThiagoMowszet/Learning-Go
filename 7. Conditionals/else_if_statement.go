@@ -19,6 +19,5 @@ func else_if_statements(){
 
 
 func main() {
-    
     else_if_statements()
 }

@@ -4,11 +4,11 @@ import ("fmt")
 
 func consts() {
 
-const SOLARSYSTEM_PLANETS int = 8 
+    const SOLARSYSTEM_PLANETS int = 8 
 
-fmt.Println(SOLARSYSTEM_PLANETS) // 8
+    fmt.Println(SOLARSYSTEM_PLANETS) // 8
 
-// There are 2 types of constants: Typed constants and Untyped constants.
+    // There are 2 types of constants: Typed constants and Untyped constants.
 
     // Typed constants
 
@@ -21,7 +21,7 @@ fmt.Println(SOLARSYSTEM_PLANETS) // 8
 
 
 
-// Multiple Const declaration
+    // Multiple Const declaration
 
     const (
         PI float32 = 3.14

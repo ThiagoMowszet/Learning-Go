@@ -68,7 +68,7 @@ func main() {
 
 
 
-    
+
     // Find the Length of an Array - The len() function is used to find the length of an array
 
     fmt.Println(len(arr1)) //5

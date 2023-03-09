@@ -16,12 +16,12 @@ func testcount(x int) int {
 
 
 func factorial_recursion(x float64) (y float64) {
-  if x > 0 {
-     y = x * factorial_recursion(x-1)
-  } else {
-     y = 1
-  }
-  return
+    if x > 0 {
+        y = x * factorial_recursion(x-1)
+    } else {
+        y = 1
+    }
+    return
 }
 
 
